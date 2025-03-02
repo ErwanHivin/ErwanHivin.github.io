@@ -1,5 +1,17 @@
+.coming-soon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: gray;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
 .profile-picture{
-    width: 15%;
+    width: 10%;
     padding-left: 5%;
 }
 

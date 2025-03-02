@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     font-size: 3rem;
     font-weight: bold;
-    color: gray;
+    color: rgba(128, 128, 128, 0.5);
     border-radius: 10px;
     pointer-events: none;
 }
@@ -24,4 +24,46 @@
 
 .top-info h1{
     padding-left: 10%;
+}
+
+.information-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-div h2{
+    position:relative;
+    text-align: center;
+}
+
+.collapsible{
+    cursor: pointer;
+    padding: 1%;
+}
+
+.skill-collapse{
+    margin-top: 1%;
+    width: 60%;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.skill-collapse .header {
+    display: flex; /* Permet de mettre le texte et le bouton sur la même ligne */
+    justify-content: space-between; /* Espace entre le texte et le bouton */
+    align-items: center; /* Aligne verticalement le texte et le bouton */
+}
+
+.skill-collapse button{
+    margin-right: 10%;
+}
+
+.skill-collapse span{
+    margin-left: 10%;
+}
+
+.skill-collapse .content{
+    display: none;
+    border-top: 1px solid black;
 }

@@ -1,0 +1,15 @@
+.profile-picture{
+    width: 15%;
+    padding-left: 5%;
+}
+
+.top-info{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.top-info h1{
+    padding-left: 10%;
+}

@@ -19,6 +19,12 @@ body{
     font-family: 'Arial', sans-serif; /* Arial */
 }
 
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
 /* top info */
 
 .profile-picture{
@@ -62,7 +68,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding-left: 3px;
     padding-right: 3px;
     font-size: 20px;
@@ -71,6 +77,25 @@ body{
 .information-div h2{
     position: relative;
     text-align: center;
+    font-size: 40px;
+}
+
+.information-div p{
+    text-align: justify;
+}
+
+.about-me{
+    width: 70%;
+}
+
+.qualifications-list{
+    text-align: left;
+    width: 70%;
+}
+
+.experiences-div{
+    text-align: left;
+    width: 70%;
 }
 
 .collapsible{
@@ -82,7 +107,7 @@ body{
     background-color: #2C3E50;
     color: #FFFFF0;
     margin-top: 1%;
-    width: 50%;
+    width: 70%;
     border: 1px solid black;
     align-items: center;
     border-radius:5px;
@@ -106,6 +131,19 @@ body{
     display: none;
     border-top: 1px solid black;
     padding: 0 10px;
+}
+
+.skill{
+    margin: 5px;
+    padding: 5px;
+    border: #FFFFF0 solid 1px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project{
+    width: 70%;
 }
 
 /* foot-div */

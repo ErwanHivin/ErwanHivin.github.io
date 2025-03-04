@@ -16,7 +16,6 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: scroll;
     font-family: 'Arial', sans-serif; /* Arial */
 }
 
@@ -80,10 +79,13 @@ body{
 }
 
 .skill-collapse{
+    background-color: #2C3E50;
+    color: #FFFFF0;
     margin-top: 1%;
-    width: 60%;
+    width: 50%;
     border: 1px solid black;
     align-items: center;
+    border-radius:5px;
 }
 
 .skill-collapse .header {
@@ -103,4 +105,14 @@ body{
 .skill-collapse .content{
     display: none;
     border-top: 1px solid black;
+    padding: 0 10px;
+}
+
+/* foot-div */
+
+.foot-div{
+    background-color: #2C3E50;
+    width: 100%;
+    height: 15px;
+    margin-top: 4px;
 }

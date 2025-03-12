@@ -11,18 +11,12 @@
 }
 
 body{
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: 'Arial', sans-serif; /* Arial */
-}
-
-a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
 }
 
 /* top info */
@@ -55,7 +49,7 @@ a{
 
 .top-info h1 {
     margin: auto;
-    color: #FFFFF0;
+    color: #FFFFFF;
 }
 
 
@@ -88,21 +82,22 @@ a{
 }
 
 .about-me{
-    width: 70%;
+    text-align: left;
+    width: 50%;
 }
 
 .qualifications-list{
     text-align: left;
-    width: 70%;
+    width: 50%;
 }
 
 .experiences-div{
     text-align: left;
-    width: 70%;
+    width: 50%;
 }
 
 .collapsible {
-    background-color: #FFFFF0;
+    background-color: #FFFFFF;
     border-radius: 5px;
     font-size: 30px;
     font-weight: bold;
@@ -110,11 +105,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .collapsible span{
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 
 .collapsible:hover {
     background-color: rgb(201, 201, 201);
@@ -126,9 +123,9 @@ a{
 
 .skill-collapse{
     background-color: #2C3E50;
-    color: #FFFFF0;
+    color: #FFFFFF;
     margin-top: 1%;
-    width: 70%;
+    width: 50%;
     border: 1px solid black;
     align-items: center;
     border-radius:5px;
@@ -152,28 +149,48 @@ a{
     margin-left: 10%;
 }
 
-.skill-collapse .content{
+.content{
     display: none;
     border-top: 1px solid black;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 
 .skill{
     margin: 5px;
     padding: 5px;
-    border: #FFFFF0 solid 1px;
-    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: #FFFFFF solid 1px;
     border-radius: 10px;
     text-align: center;
 }
 
 .project{
-    width: 70%;
+    width: 50%;
 }
 
 .contact-list{
     text-align: left;
-    width: 70%;
+    width: 50%;
+}
+
+#projects a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#personnal-informations a {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#educational-qualifications a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
 }
 
 /* foot-div */
@@ -183,4 +200,29 @@ a{
     width: 100%;
     height: 15px;
     margin-top: 4px;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    font-size: 20px;
+    font-weight: normal;
+    content: attr(data-title);
+    background-color: #FFFFFF;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    bottom: +1.6em;
+    left: +1.6em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid black;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
 }

@@ -19,6 +19,12 @@ body{
     font-family: 'Arial', sans-serif; /* Arial */
 }
 
+@media (max-width: 1000px) {
+    hr {
+        width: 80%!important;
+    }
+}
+
 hr {
     border: none;
     width: 50%;
@@ -88,6 +94,23 @@ hr {
     text-align: justify;
 }
 
+@media (max-width: 1000px) {
+    .about-me{
+        text-align: left;
+        width: 80%!important;
+    }
+    
+    .qualifications-list{
+        text-align: left;
+        width: 80%!important;
+    }
+    
+    .experiences-div{
+        text-align: left;
+        width: 80%!important;
+    }
+}
+
 .about-me{
     text-align: left;
     width: 50%;
@@ -126,6 +149,12 @@ hr {
 
 .collapsible.active span{
     transform: rotate(90deg);
+}
+
+@media (max-width: 1000px) {
+    .skill-collapse{
+        width: 80%!important;
+    }
 }
 
 .skill-collapse{
@@ -171,6 +200,16 @@ hr {
     border: #FFFFFF solid 1px;
     border-radius: 10px;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .project{
+        width: 80%!important;
+    }
+    
+    .contact-list{
+        width: 80%!important;
+    }
 }
 
 .project{

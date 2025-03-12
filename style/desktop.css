@@ -19,6 +19,13 @@ body{
     font-family: 'Arial', sans-serif; /* Arial */
 }
 
+hr {
+    border: none;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+
 /* top info */
 
 .profile-picture{
